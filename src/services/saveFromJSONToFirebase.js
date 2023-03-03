@@ -1,4 +1,4 @@
-/*import {addDoc, collection} from "firebase/firestore";
+import {addDoc, collection} from "firebase/firestore";
 import {db} from "../firebase/config";
 import products from '../data/accesorios.json';
 
@@ -20,4 +20,4 @@ const saveFromJSONToFirebase = async () => {
     }
 }
 
-export default saveFromJSONToFirebase;*/
+export default saveFromJSONToFirebase;

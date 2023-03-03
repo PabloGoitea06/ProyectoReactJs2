@@ -4,20 +4,21 @@ import TableRow from "./TableRow";
 import generateOrderObject from "../services/generateOrderObject";
 import { collection, addDoc } from "firebase/firestore"; 
 import { db } from '../firebase/config';
+import { Link } from "react-router-dom";
 
 
 const styles = {
   form: {
-    "font-size" : "1rem",
+    "fontSize" : "1rem",
     "color" : "red",
-    "border-radius" : "3px"
+    "borderRadius" : "3px"
 },
 confirm: {
-  "border-radius" : "3px",
+  "borderRadius" : "3px",
   "color" : "blue"
 },
 tabla:{
-  "background-color" : "pink"
+  "backgroundColor" : "pink"
 }
 };
 
@@ -59,7 +60,10 @@ const Cart = () => {
 
   return (
     <>
-      <table style={styles.tabla} class="table table-striped">
+    {
+    products.lenght !== 0 ? 
+    <>
+      <table style={styles.tabla} className="table table-striped">
         <thead>
           <tr>
             <th scope="row">{"id"}</th>
@@ -108,6 +112,15 @@ const Cart = () => {
       </form>
     </div>
     </>
+    :
+    <>
+    <h1>No hay productgos en el carrito</h1>
+    <button>
+      <Link to = "/">Home</Link>
+    </button>
+    </>
+} 
+</>
   );
 };
 

@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { Shop } from "../context/ShopProvider";
-import ItemCount from "./ItemCount";
-//import productosA from "../data/accesorios.json";
+import ItemCount from "./ItemCount"; 
+
 
 const ItemDetail = ({ detail }) => {
   const [quantity, setQuantity] = useState(0);
