@@ -33,9 +33,9 @@ npm start
 #### Como correr el proyecto en tu computadora
 
 ```javascript
- git clone
- cd README.md
- npm install README.md
+ git clone https://github.com/PabloGoitea06/ProyectoReactJsBloom
+ cd ProyectoReactJsBloom
+ npm install ProyectoReactJsBloom
  npm start
  ```
 
